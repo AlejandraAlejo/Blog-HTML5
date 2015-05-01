@@ -10,7 +10,7 @@
   <meta http-equiv = "Content-Type" content="text/html"; charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
   <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-  <title>EL Blog del HTML5</title>
+  <title>El Blog del HTML5</title>
   <link rel="stylesheet" type= "text/css" href="css/styles.css" />
  
  
@@ -27,7 +27,7 @@
     
     <nav class="prMenu">
         <ul>
-            <li><a>Opcion 1</a></li>
+            <li><a>Inicio</a></li>
             <li><a>Opcion 2</a></li>
             <li><a>Opcion 3</a></li>
             <li><a>Opcion 4</a></li>
@@ -47,7 +47,18 @@
     
     <div class="centerColumn">  
    
-     
+        <div class="title"><h1>Bienvenidos al Blog del HTML5</h1></div>
+        
+        <div class="infoTr"><h1></h1></div>
+        <div class="info"><h1></h1></div>
+        <div class="infoTr"><h1></h1></div>
+        <div class="info"><h1></h1></div>
+        <div class="infoTr"><h1></h1></div>
+        <div class="info"><h1></h1></div>
+        <div class="infoTr"><h1></h1></div>
+        <div class="info"><h1></h1></div>
+        <div class="infoTr"><h1></h1></div>
+        <div class="info"><h1></h1></div>
 
         
     <!--<footer>© 2015 Copyright Mi Cuponera. Todos los derechos reservados. </footer>-->

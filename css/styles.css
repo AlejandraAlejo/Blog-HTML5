@@ -7,11 +7,21 @@
 html, body {
     height: 100%;
 }
-.container {
+/*.container {
     background-image: url("../img/gray.jpg");
     min-height: 100%;
     width: 100%;
     position: fixed;
+}*/
+
+.container {
+    background-image: url("../img/logo.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    min-height: 100%;
+    position: fixed;
+    width: 100%;
 }
 
 header{
@@ -53,18 +63,17 @@ header  p {
     
 }
 .centerColumn{    
-    background-color: darkslateblue;
+    background-color: rgba(72, 61, 139, 0.5);
     float: left;
     margin-left: 15%;
     width: 70%;
     min-height: 100%;
     position: relative;
-    opacity: 0.5;
-    
+    /*opacity: 0.5;*/
 }
 
 nav.prMenu{
-    margin-top: 55px
+    margin-top: 80px
 
 }
 
@@ -151,6 +160,26 @@ footer{
     background-color: #323638;
     margin-top: -55px;
 }
+.title{
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    opacity: 1;
+    margin-top: 55px;
+}
+
+.info{
+    width: 100%;
+    height: 200px;
+    background-color: #fff;
+    opacity: 1;
+}
+
+.infoTr{
+    width: 100%;
+    height: 200px;
+    opacity: 1;
+}
 /*
 footer {
     background-color: #ff0066;
@@ -164,172 +193,3 @@ footer {
     text-align: center;
     text-shadow: 0.1em 0.1em 0.2em black;
 }
-
-img {
-    height: auto;
-    margin-top: 150px;
-    width: 50%;
-}
-
-nav.menu1 {
-    float: right;
-    margin-bottom: -128px;
-    margin-right: 12%;
-    margin-top: 90px;
-    position: relative;
-}
-
-.menu1 li {
-    list-style: outside none none;
-    text-align: center;
-    display: inline-block;
-}
-
-
-.menu1 a {
-    color: #fff;
-    -moz-user-select: none;
-    background-color: #cc6600;
-    border-color: #ff3333;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857;
-    margin-bottom: 0;
-    padding: 6px 12px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-    text-decoration: none;
-    width: 100px;
-}
-
-.menu1 a:hover{
-    background-color: #ff9933;
-}
-
-.menu1 a:active{
-    background-color: #cc9933;
-}
-
-h1, h2, h3{
-    color: #fff;
-    text-shadow: 0.1em 0.1em 0.2em black;
-    line-height: 2;
-}
-.icon{
-    width: 20px; 
-    height: 20px; 
-    margin-top:2px; 
-    margin-bottom:-5px
-}
-
-.imgGroup {
-    margin-bottom: -35px;
-    margin-top: -49px;
-}
-
-.info {
-    margin-top: 255px;
-}
-
-.logo{
-    width: 15%;
-    height: auto;
-    margin: 4%
-}
-
-.tittle {
-    padding-top: 3.5%;
-}
-
-
-nav.menu3 {
-    float: left;
-    margin-left: 6%;
-    margin-top: -40px;
-    position: relative;
-}
-.menu3 li {
-    display: inline-block;
-    list-style: outside none none;
-    text-align: center;
-}
-.menu3 a {
-    -moz-user-select: none;
-    background-color: #cc6600;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857;
-    margin-bottom: 0;
-    padding: 6px 12px;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    width: 100px;
-}
-.menu3 a:hover {
-    background-color: #ff9933;
-}
-.menu3 a:active {
-    background-color: #cc9933;
-}
-
-
-nav.menu2 {
-
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-}
-.menu2 li {
-    display: inline-block;
-    list-style: outside none none;
-    text-align: center;
-}
-.menu2 a {
-    -moz-user-select: none;
-    background-color: #cc6600;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.42857;
-    margin-bottom: 0;
-    padding: 6px 12px;
-    text-align: center;
-    text-decoration: none;
-    vertical-align: middle;
-    white-space: nowrap;
-    width: 100px;
-}
-.menu2 a:hover {
-    background-color: #ff9933;
-}
-.menu2 a:active {
-    background-color: #cc9933;
-}
-
-
-
-@media only screen and (max-width: 425px) {
-    
-footer {
-    font-size: 12px;
-    line-height: 6.5;
-}
-
-
-}*/
