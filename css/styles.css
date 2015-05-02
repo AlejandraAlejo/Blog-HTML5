@@ -19,14 +19,15 @@ html, body {
     background-image: url("../img/logo.svg");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: auto 100%;
+    background-size: auto 70%;
+    //background-size: auto 100%;
     min-height: 100%;
     position: fixed;
     width: 100%;
 }
 
 header{
-    height: 55px;
+    height: 105px;
     width: 100%;
     //background-color: #323638;
     background-color: #5E412F;
@@ -35,13 +36,17 @@ header{
 }
 
 header  p {
-    color: #e44d26;
+    //color: #e44d26;
     font-family: fantasy;
-    font-size: 25px;
+    //font-size: 25px;
     font-weight: bold;
     margin-left: 4%;
     padding: 14px;
     text-shadow: 0.1em 0.1em 0.2em red;
+    color: #f07818;
+    font-size: 31px;
+    margin-top: 18px;
+    
 }
 
 .leftColumn{    
@@ -75,7 +80,8 @@ header  p {
 }
 
 nav.prMenu{
-    margin-top: 80px
+    margin-top: 200px;
+    //margin-top: 80px;
 
 }
 
@@ -167,7 +173,8 @@ footer{
     height: 100px;
     background-color: #fff;
     opacity: 1;
-    margin-top: 55px;
+    //margin-top: 55px;
+    margin-top: 105px;
 }
 
 .info{
@@ -199,10 +206,9 @@ footer {
 .logo{
     width: 100px;
     height: 100px;
-    margin-left: 315px;
-    margin-top: -57px;
+    //margin-left: 315px;
+    //margin-top: -57px;
+    margin-left: 365px;
+    margin-top: -85px;
 }
 
-#logohtml5{
-    //border: 1px solid black;
-}

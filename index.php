@@ -41,14 +41,14 @@
         </ul>
     </nav>
         
-    <nav class="snMenu">
+    <!--<nav class="snMenu">
         <span>Siguenos en:</span>
         <ul>
             <li><a>Facebook</a></li>
             <li><a>Twitter</a></li>
             <li><a>Youtube</a></li>
         </ul>
-    </nav>
+    </nav>-->
     
     </div>
     
