@@ -6,7 +6,7 @@
 }
 html, body {
     height: 100%;
-    background-color: #FCEBB6;
+    //background-color: #FCEBB6;
 }
 /*.container {
     background-image: url("../img/gray.jpg");
@@ -50,23 +50,27 @@ header  p {
 }
 
 .leftColumn{    
-    background-color: #fff;
+    //background-color: #fff;
+    //background-color: #FCEBB6;
+    background-color: rgba(252,235,182,0.7);
     float: left;
     width: 15%;
     height: 100%;
     position: fixed;
-    opacity: 0.7;   
+    //opacity: 0.7;   
 }
 
 
 .rightColumn{    
-    background-color: #fff;
+    //background-color: #fff;
+    //background-color: #FCEBB6;
+    background-color: rgba(252,235,182,0.7);
     float: left;
     margin-left: 85%;
     height: 100%;
     width: 15%;
     position: fixed;
-    opacity: 0.7;
+    //opacity: 0.7;
     
 }
 .centerColumn{    
@@ -98,8 +102,9 @@ nav.prMenu{
     text-align: center;
     vertical-align: middle;
     width: 100%;
-    color: darkslateblue;
-    text-shadow: 0.1em 0.1em 0.2em cornflowerblue;
+    //color: darkslateblue;
+    color: #508070;
+    //text-shadow: 0.1em 0.1em 0.2em cornflowerblue;
     font-weight: bold;
 }
 
@@ -108,7 +113,8 @@ nav.prMenu{
 }
 
 .prMenu li:hover{
-    background-color: darkslateblue;
+    //background-color: darkslateblue;
+    background-color: #78C0A8;
     color: #fff;
 }
 
@@ -141,8 +147,9 @@ nav.snMenu{
     text-align: center;
     vertical-align: middle;
     width: 100%;
-    color: darkslateblue;
-    text-shadow: 0.1em 0.1em 0.2em cornflowerblue;
+    //color: darkslateblue;
+    //text-shadow: 0.1em 0.1em 0.2em cornflowerblue;
+    color: #508070;
     font-weight: bold;
 }
 
@@ -151,7 +158,8 @@ nav.snMenu{
 }
 
 .snMenu li:hover{
-    background-color: darkslateblue;
+    //background-color: darkslateblue;
+    background-color: #78C0A8;
     color: #fff;
 }
 
