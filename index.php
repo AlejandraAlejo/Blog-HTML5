@@ -26,6 +26,7 @@
         <p>El Blog del HTML5</p>
         <div class = "logo">
             <canvas id="logohtml5" width="100" height="100">
+                El navegador no soporta HTML 5
 		    </canvas>
         </div>    
     </header>
