@@ -5,13 +5,13 @@
 
 <!DOCTYPE html>
 <html>
- <head>
- 
-  <meta http-equiv = "Content-Type" content="text/html"; charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-  <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-  <title>El Blog del HTML5</title>
-  <link rel="stylesheet" type= "text/css" href="css/styles.css" />
+    <head>
+        <meta http-equiv = "Content-Type" content="text/html"; charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
+        <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
+        <title>El Blog del HTML5</title>
+        <link rel="stylesheet" type= "text/css" href="css/styles.css" />
+        <script src="javascript/canvasLogo.js"></script>   
  
  
  </head>
@@ -22,7 +22,13 @@
     
     
     <div class="container"></div>
-    <header><p>El Blog del HTML5</p></header>
+    <header>
+        <p>El Blog del HTML5</p>
+        <div class = "logo">
+            <canvas id="logohtml5" width="100" height="100">
+		    </canvas>
+        </div>    
+    </header>
     <div class="leftColumn">
     
     <nav class="prMenu">
