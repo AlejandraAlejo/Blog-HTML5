@@ -28,9 +28,9 @@
     <nav class="prMenu">
         <ul>
             <li><a>Inicio</a></li>
-            <li><a>Opcion 2</a></li>
-            <li><a>Opcion 3</a></li>
-            <li><a>Opcion 4</a></li>
+            <li><a>Blog</a></li>
+            <li><a>Categorias</a></li>
+            <li><a>Tags</a></li>
         </ul>
     </nav>
         
