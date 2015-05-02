@@ -54,9 +54,14 @@
     
     <div class="centerColumn">  
    
-        <div class="title"><h1>Bienvenidos al Blog del HTML5</h1></div>
+        <div class="title">
+            <marquee behavior="alternate"><h1>Bienvenidos al Blog del HTML5</h1></marquee>
+            <h2>En este sitio encontrarás tutoriales y videotutoriales que te ayudarán a desarrollar páginas web utilizando el lenguaje HTML5.</h2>
+        </div>
         
-        <div class="infoTr"><h1></h1></div>
+        <div class="infoTr">
+           <h1></h1>
+        </div>
         <div class="info"><h1></h1></div>
         <div class="infoTr"><h1></h1></div>
         <div class="info"><h1></h1></div>
@@ -72,12 +77,12 @@
     </div>
 
     <div class="rightColumn">
-    <nav class="snMenu">
+    <!--<nav class="snMenu">
         <ul>
             <li><a>Facebook LIKE</a></li>
             <li><a>Twits</a></li>
         </ul>
-    </nav>
+    </nav>-->
     
     
     </div>
