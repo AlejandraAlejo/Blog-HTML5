@@ -1,83 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta http-equiv = "Content-Type" content="text/html"; charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0">
-        <link href="favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon">
-        <title>EL Blog del HTML5</title>
-        <link rel="stylesheet" type= "text/css" href="css/styles.css" />
+        <meta charset="utf-8" />
+        <title>Tutoriales HTML5 - Blog</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css">
     </head>
-<body>
-    <div class="container"></div>
-    <header><p>El Blog del HTML5</p></header>
-    <div class="leftColumn">
-    
-    <nav class="prMenu">
-        <ul>
-            <li><a>Opcion 1</a></li>
-            <li><a>Opcion 2</a></li>
-            <li><a>Opcion 3</a></li>
-            <li><a>Opcion 4</a></li>
-        </ul>
-    </nav>
-        
-    <nav class="snMenu">
-        <span>Siguenos en:</span>
-        <ul>
-            <li><a>Facebook</a></li>
-            <li><a>Twitter</a></li>
-            <li><a>Youtube</a></li>
-        </ul>
-    </nav>
-    
-    </div>
-    
-    <div class="centerColumn">  
-        <section class = "post-1">
-            <header>
-                <h1>¡Bienvenido al Blog del HTML5!</h1>
-            </header>
-            <article>
-                En este sitio encontrarás tutoriales y videotutoriales que te ayudarán a desarrollar páginas web utilizando el lenguaje HTML5.<br />
-                <a href="#">Leer más...</a>
-            </article>
-        </section>
-        <section class = "post-2">
-            <header>
-                <h1>Introducción al HTML5</h1>
-            </header>
-            <article>
-                En este post te daremos una breve introducción sobre lo que es HTML5 y sus principales características.<br />
-                <a href="#">Leer más..</a>
-            </article>
-        </section>
-        <section class = "post-3">
-            <header>
-                <h1>Estructura de un documentos HTML5</h1>
-            </header>
-            <article>
-                En este post te mostraremos como es la estructura general de una página creada con HTML5.<br />
-                <a href="#">Leer más...</a>
-            </article>
-        </section>        
-    <!--<footer>© 2015 Copyright Mi Cuponera. Todos los derechos reservados. </footer>-->
-    </div>
-
-    <div class="rightColumn">
-    <nav class="snMenu">
-        <ul>
-            <li><a>Facebook LIKE</a></li>
-            <li><a>Twits</a></li>
-        </ul>
-    </nav>
-    
-    
-    </div>
-    
-    
-    
-    
-    
-			
-</body>
+    <body>
+        <header class="titulo-pagina">
+            <h1>El Blog</h1>
+        </header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Categorías</a></li>
+                <li><a href="#">Etiquetas</a></li>
+                <li><a href="#">Videos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>    
+        </nav>
+        <aside role="complementary" class="sidebar">
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Google+</a></li>
+            </ul>    
+            <div class="anuncios"></div>
+        </aside>
+        <div role="main" class="contenido">
+            <section class="contenedor-post">
+                <header class="titulo-post">
+                    <h2>Título de post-1</h2>
+                    <h3>Escrito por: Autor Fecha: 01/01/2015</h3>
+                </header>
+                <div  class="imagen-post">
+                    <img src="img/121.jpg"/>
+                </div>    
+                <article class="fragmento-post">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut aliquet neque, in finibus neque. 
+                        Suspendisse placerat elementum suscipit. Duis porta congue justo sit amet euismod. 
+                        Donec facilisis cursus commodo. Nulla vitae ex eu enim sodales eleifend in in justo.</p>
+                </article>
+                <footer class="leer-mas"><a href="#">Leer más...</a></footer>
+            </section>
+            <section class="contenedor-post">
+                <header class="titulo-post">
+                    <h2>Título de post-2</h2>
+                    <h3>Escrito por: Autor Fecha: 01/01/2015</h3>                    
+                </header>
+                <div  class="imagen-post">
+                    <img src="img/16.jpg"/>
+                </div>    
+                <article class="fragmento-post">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut aliquet neque, in finibus neque. 
+                        Suspendisse placerat elementum suscipit. Duis porta congue justo sit amet euismod. 
+                        Donec facilisis cursus commodo. Nulla vitae ex eu enim sodales eleifend in in justo.</p>
+                </article>
+                <footer class="leer-mas"><a href="#">Leer más...</a></footer>
+            </section>
+        </div>
+        <footer class="footer">Copyright © 2015 Tutoriales HTML5</footer>
+    </body>
 </html>

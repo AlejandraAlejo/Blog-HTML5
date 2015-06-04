@@ -1,0 +1,87 @@
+/*ESTILOS PRINCIPALES*/
+html{
+    height: 100%;    
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    position: relative;
+    padding-bottom: 100px;   
+}
+
+.titulo-pagina, .footer{
+    background-color: #E74700;
+    color: white;
+    text-align: center;
+}
+
+.menu, .sidebar{
+    background-color: #4D6684;
+    color: white;
+    width: 15%;
+    margin-top: -22px;
+}
+
+.menu a, .sidebar a{
+    color: white;
+}
+
+.titulo-pagina{
+    line-height: 4;  
+    margin-top: -21px;
+}
+
+.menu{
+    float: left;
+}
+
+.sidebar{
+    float: right;
+}
+
+.footer{
+    width: 100%;
+    position: absolute;
+    line-height: 3;
+    bottom: 0;
+
+}
+
+/*PAGINA BLOG*/
+.contenido{
+    color: #3D3D3D;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contenedor-post{
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.titulo-post{
+    text-align: center;
+}
+
+.imagen-post{
+    overflow: hidden;
+    height: 400px;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.imagen-post img{
+    transition: all 0.5s ease-in-out 0.1s;
+    max-width: 100%;
+}
+
+.imagen-post img:hover{
+    transform: scale(1.1);
+}
+
+
