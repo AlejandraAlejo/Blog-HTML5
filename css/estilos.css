@@ -120,11 +120,39 @@ body{
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 /*PAGINA POST*/
+.post, .comentarios{
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.post{
+    border-bottom: 3px solid #E74700;
+}
+
+#comentarios-enviados h3{
+    color: #E74700;
+}
+
+.comentario{
+    border-bottom: 2px solid #83AA30;
+    margin-top: 10px;
+}
+
+.comentario:last-child{
+    border-bottom: none;
+}
+
+.formulario-comentarios{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 
 
 /*-----------------------------------------------------------------------------------------------------------------------------*/
 /*PAGINA CONTACTO*/
-
 .contacto{
     margin-left: auto;
     margin-right: auto;
@@ -176,14 +204,34 @@ body{
 .mensaje-obligatorio{
     color: red;
     text-align: right;
+    font-weight: bold;
+}
+
+input{
+    font-size: 15px;
 }
 
 input, textarea{
     font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+input:focus:invalid, textarea:focus:invalid{
+    background: #fff url(../img/invalid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+}
+
+input:focus:valid, textarea:focus:valid{
+    background: #fff url(../img/valid.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
 }
 
 .asterisco, .asterisco-mensaje{
     color: red;
+    font-weight: bold;
 }
 
 #nombre{
