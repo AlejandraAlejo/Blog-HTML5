@@ -34,25 +34,25 @@
             <section class="contacto">
                 <p class="mensaje-contacto">¿Dudas, comentarios, sugerencias? Envíanos un email y nos pondremos en contacto contigo.</p>
                 <form class="formulario" action="javascript:validar()" method = "">
-                    <p class="mensaje-obligatorio"><strong>* Obligatorio</strong></p>
+                    <p class="mensaje-obligatorio">* Obligatorio</p>
                     <p>
                         <label>Nombre:</label> 
                         <input id="nombre" required type="text" placeholder="Nombre" />
-                        <label class="asterisco"><strong>*</strong></label>
+                        <label class="asterisco">*</label>
                         <span id="error-nombre"></span>
                     </p>
                     <p>
                         <label>Email:</label>
                         <input id="email" required type="email" placeholder="Email" />
-                        <span class="form_hint">name@something.com</span>
-                        <label class="asterisco"><strong>*</strong></label>
+                        <label class="asterisco">*</label>
+                        <span id="error-email"></span>
                     </p>    
                     <p>
                         <label>Mensaje:</label>
                         <span id="error-mensaje"></span>
                         <br />
                         <textarea id="mensaje" required rows="6" cols="40" placeholder="Tu mensaje..." ></textarea>
-                        <label class="asterisco-mensaje"><strong>*</strong></label>                        
+                        <label class="asterisco-mensaje">*</label>                        
                     </p>    
                     <button class="boton-enviar">Enviar</button>
                 </form>

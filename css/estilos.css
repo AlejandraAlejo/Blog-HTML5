@@ -178,28 +178,8 @@ body{
     text-align: right;
 }
 
-/*Estilos a input y textarea*/
 input, textarea{
     font-family: 'Open Sans', sans-serif;
-    font-size:15px;
-    outline:none;
-    transition: all 0.75s ease-in-out;
-    -webkit-transition: all 0.75s ease-in-out;
-    -moz-transition: all 0.75s ease-in-out;
-    border-radius:3px;
-    -webkit-border-radius:3px;
-    -moz-border-radius:3px;
-    border:1px solid #669900;
-    color:black;
-    background-color:#FFFFCC;
-    padding: 3px;
-}
-input:focus, textarea:focus {
-    box-shadow: 0 0 10px #aaa;
-    -webkit-box-shadow: 0 0 10px #aaa;
-    -moz-box-shadow: 0 0 10px #aaa;
-    border:1px solid blue;
-    background-color:white;
 }
 
 .asterisco, .asterisco-mensaje{
@@ -218,43 +198,3 @@ input:focus, textarea:focus {
     float: right;
 }
 
-.formulario input:required:valid, .formulario textarea:required:valid {
-    background: #fff url(images/valid.png) no-repeat 98% center;
-    box-shadow: 0 0 5px #5cd053;
-    border-color: #28921f;
-}
-
-.formulario input:focus:invalid, .formulario textarea:focus:invalid {
-    background: #fff url(images/invalid.png) no-repeat 98% center;
-    box-shadow: 0 0 5px #d45252;
-    border-color: #b03535
-}
-
-.form_hint {
-    background: #d45252;
-    border-radius: 3px 3px 3px 3px;
-    color: white;
-    margin-left:8px;
-    padding: 1px 6px;
-    z-index: 999; /* hints stay above all other elements */
-    position: absolute; /* allows proper formatting if hint is two lines */
-    display: none;
-}
-.form_hint::before {
-    content: "\25C0";
-    color:#d45252;
-    position: absolute;
-    top:1px;
-    left:-6px;
-}
-
-.formulario input, .formulario textarea {
-    -moz-transition: padding .25s; 
-    -webkit-transition: padding .25s; 
-    -o-transition: padding .25s;
-    transition: padding .25s; 
-}
-
-.formulario input:focus + .form_hint {display: inline;}
-.formulario input:required:valid + .form_hint {background: #28921f;}
-.formulario input:required:valid + .form_hint::before {color:#28921f;}
