@@ -1,15 +1,13 @@
-/*ESTILOS PRINCIPALES*/
-html{
-    height: 100%;    
-}
-
-body{
-    font-family: 'Open Sans', sans-serif;
+/*ESTILOS PRINCIPALES----------------------------------------------------------------------------------------------------------------*/
+*{
     margin: 0;
     padding: 0;
-    min-height: 100%;
-    position: relative;
-    padding-bottom: 100px;   
+}
+
+html, body{
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    color: #3D3D3D;       
 }
 
 .titulo-pagina, .footer{
@@ -18,61 +16,139 @@ body{
     text-align: center;
 }
 
-.menu, .sidebar{
-    background-color: #4D6684;
-    color: white;
-    width: 15%;
-    margin-top: -22px;
-}
-
-.menu a, .sidebar a{
-    color: white;
-}
-
 .titulo-pagina{
-    line-height: 4;  
-    margin-top: -21px;
-}
-
-.menu{
-    float: left;
-    bottom: 0;
-    margin-top: 128px;
-    position: absolute;
-    top: 0;
-}
-
-.sidebar{
-    left: 85%;
-    bottom: 0;
-    margin-top: 128px;
-    position: absolute;
-    top: 0;
+    line-height: 4;      
 }
 
 .footer{
     width: 100%;
     position: absolute;
     line-height: 3;
-    bottom: 0;
-
+    clear: both;
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------------*/
-/*PAGINA BLOG*/
+.logo{
+    margin-left: 42px;
+    margin-top: 25px;
+    width: 120px;
+}
+
 .contenido{
-    color: #3D3D3D;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     height: 100%;
+    
 }
 
-.contenedor-post{
+.wrap{
+    display: inline-block;
+    float: left;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: 3px solid #E74700;
+    max-height: 100%;
     width: 65%;
+    overflow-y: scroll;
+}
+
+/*Columna Izquierda (Menú)*/
+.menu{
+    background-color: #4D6684;
+    color: white;
+    width: 15%;
+    float: left;
+    height:100%;
+}
+
+.menu a, .sidebar a{
+    color: white;
+    text-decoration: none;
+}
+
+.menu li{
+    list-style-type: none;
+    line-height: 3;
+    text-align: center;
+    background: linear-gradient(#4A4A4A, #3D3D3D);
+}
+
+.menu li.active ul{
+    display: block;
+    
+}
+
+.menu ul{
+    margin-top: 50px;
+    padding: 0;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.menu ul ul.op-oculta{
+    display: none;
+    margin-top: 0;
+    
+}
+
+.op-categorias, .op-etiquetas{
+    cursor: pointer;
+}
+
+.op-oculta li a, .op-oculta li a{
+    display: block;
+    transition: all 0.15s;  
+    background-color: #898989;
+}
+
+.op-oculta li a:hover, .op-oculta a:hover{
+    background: #1499D3;
+    border-left: 5px solid #E74700;
+}
+
+
+/*Columna Derecha (Sidebar)*/
+.sidebar{
+    background-color: #4D6684;
+    color: white;
+    width: 21.5%;    
+    float: left;
+    height: 100%;
+    margin-left: -1.5%;
+}
+
+.sidebar h2{
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+
+.sidebar ul{
+    padding: 0;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar ul li{
+    list-style-type: none;
+    width: 60px;
+    margin-right: auto;
+    margin-left: auto;
+    display: inline-block;
+}
+
+.twitter{
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 185px;
+}
+
+/*PAGINA BLOG*/
+.contenedor-post{
+    border-bottom: 3px solid #e74700;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 20px;
 }
 
 .contenedor-post:last-child{
@@ -89,6 +165,7 @@ body{
     width: 600px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
 
 .imagen-post img{
@@ -98,6 +175,12 @@ body{
 
 .imagen-post img:hover{
     transform: scale(1.1);
+}
+
+.fragmento-post{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-align: justify;
 }
 
 .leer-mas{
@@ -118,16 +201,46 @@ body{
     background-color: #526A1E;
 }
 
-/*-----------------------------------------------------------------------------------------------------------------------------*/
-/*PAGINA POST*/
+/*PAGINA POST------------------------------------------------------------------------------------------------------------------*/
 .post, .comentarios{
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
+    width: 90%;
 }
 
 .post{
     border-bottom: 3px solid #E74700;
+}
+
+.post header{
+    margin-bottom: 10px;
+    margin-top: 20px;
+    font-style: oblique;
+}
+
+.contenido-post{
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.categorias, .etiquetas, .recomendaciones{
+    margin-top: 15px;
+}
+
+.categorias ul, .etiquetas ul, .recomendaciones ul{
+    list-style-type: none;
+}
+
+.categorias ul li, .etiquetas ul li{
+    display: inline;
+    margin-right: 10px;
+}
+
+.recomendaciones{
+    margin-bottom: 20px;
+}
+
+.recomendaciones ul{
 }
 
 #comentarios-enviados h3{
@@ -144,19 +257,26 @@ body{
 }
 
 .formulario-comentarios{
-    width: 50%;
+    width: 55%;
     margin-left: auto;
     margin-right: auto;
 }
 
+.formulario-comentarios p{
+    margin-bottom: 15px;
+}
+
+.categorias h4, .etiquetas h4, .recomendaciones h4{
+    color: #83AA30;    
+}
 
 
-/*-----------------------------------------------------------------------------------------------------------------------------*/
-/*PAGINA CONTACTO*/
+
+/*PAGINA CONTACTO--------------------------------------------------------------------------------------------------------------*/
 .contacto{
     margin-left: auto;
     margin-right: auto;
-    width: 65%;
+    margin-top: 30px;
 }
 
 .mensaje-contacto{
@@ -166,7 +286,7 @@ body{
     color: white;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    //margin-top: 40px;
     padding: 15px;
     text-align: center;
     width: 90%;
@@ -176,7 +296,17 @@ body{
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
 }
+
+.formulario label{
+    font-weight: bold;
+}
+
+.formulario p{
+    margin-bottom: 15px;
+}
+
 
 .boton-enviar{
     background-color: #83aa30;
@@ -189,6 +319,7 @@ body{
     margin-right: auto;
     padding: 6px;
     width: 100px;
+    margin-top: 20px;
 }
 
 .boton-enviar:hover{

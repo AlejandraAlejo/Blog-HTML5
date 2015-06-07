@@ -5,6 +5,10 @@
         <title>Tutoriales HTML5 - Blog</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
+        <script type="application/javascript" src="javascript/jquery-1.11.3.min.js"></script>
+        <script type="application/javascript" src="javascript/menu.js"></script>
+        <script type="application/javascript" src="javascript/facebook.js"></script>
+        <script type="application/javascript" src="javascript/twitter.js"></script>
     </head>
     <body>
         <header class="titulo-pagina">
@@ -12,52 +16,97 @@
         </header>
         <div role="main" class="contenido">
             <nav class="menu">
+                <img class="logo" src="img/HTML5%20Logo.svg" />
                 <ul>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Categorías</a></li>
-                    <li><a href="#">Etiquetas</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><span class="op-categorias">Categorías</span>
+                        <ul class="op-oculta">
+                            <li><a href="#">Tutoriales</a></li>
+                            <li><a href="#">Videotutoriales</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="op-etiquetas">Etiquetas</span>
+                        <ul class="op-oculta">
+                            <li><a href="#">HTML5</a></li>
+                            <li><a href="#">CSS</a></li>
+                            <li><a href="#">Tutoriales</a></li>
+                            <li><a href="#">Videotutoriales</a></li>
+                        </ul>
+                    </li>
                     <li><a href="#">Videos</a></li>
-                    <li><a href="#">Contacto</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
                 </ul>    
             </nav>
+            <div class="wrap">
+                <section class="contenedor-post">
+                    <header class="titulo-post">
+                        <h2>Título de post-1</h2>
+                        <h3>Escrito por: Autor Fecha: 01/01/2015</h3>
+                    </header>
+                    <div  class="imagen-post">
+                        <img src="img/121.jpg"/>
+                    </div>    
+                    <article class="fragmento-post">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut aliquet neque, in finibus neque. 
+                            Suspendisse placerat elementum suscipit. Duis porta congue justo sit amet euismod. 
+                            Donec facilisis cursus commodo. Nulla vitae ex eu enim sodales eleifend in in justo.</p>
+                    </article>
+                    <footer class="leer-mas"><a href="#">Leer más...</a></footer>
+                </section>
+                <section class="contenedor-post">
+                    <header class="titulo-post">
+                        <h2>Título de post-2</h2>
+                        <h3>Escrito por: Autor Fecha: 01/01/2015</h3>                    
+                    </header>
+                    <div  class="imagen-post">
+                        <img src="img/16.jpg"/>
+                    </div>    
+                    <article class="fragmento-post">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut aliquet neque, in finibus neque. 
+                            Suspendisse placerat elementum suscipit. Duis porta congue justo sit amet euismod. 
+                            Donec facilisis cursus commodo. Nulla vitae ex eu enim sodales eleifend in in justo.</p>
+                    </article>
+                    <footer class="leer-mas"><a href="#">Leer más...</a></footer>
+                </section>
+                <section class="contenedor-post">
+                    <header class="titulo-post">
+                        <h2>Título de post-3</h2>
+                        <h3>Escrito por: Autor Fecha: 01/01/2015</h3>
+                    </header>
+                    <div  class="imagen-post">
+                        <img src="img/121.jpg"/>
+                    </div>    
+                    <article class="fragmento-post">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut aliquet neque, in finibus neque. 
+                            Suspendisse placerat elementum suscipit. Duis porta congue justo sit amet euismod. 
+                            Donec facilisis cursus commodo. Nulla vitae ex eu enim sodales eleifend in in justo.</p>
+                    </article>
+                    <footer class="leer-mas"><a href="#">Leer más...</a></footer>
+                </section>    
+            </div>
             <aside role="complementary" class="sidebar">
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Google+</a></li>
-                </ul>    
+                <div class = "redes-sociales">
+                    <h2>Redes Sociales</h2>
+                    <ul>
+                        <li><a href="#"><img src="img/facebook-square.svg" title="Facebook" /></a></li>
+                        <li><a href="#"><img src="img/twitter.svg" title="Twitter" /></a></li>
+                        <li><a href="#"><img src="img/googleplus-square.svg"  title="Google+" /></a></li>
+                    </ul>    
+                </div>
+                <div class="redes-sociales">
+                    <h2>Facebook</h2>
+                    <div class="facebook">
+                        <div class="facebook"><div class="fb-page" data-href="https://www.facebook.com/facebook"
+   data-height = "130" data-hide-cover="false" data-show-facepile="false" 
+  data-show-posts="false"></div></div>                        
+                    </div>
+                    <h2>Twitter</h2>
+                    <div class="twitter">
+                        <a class="twitter-timeline"  href="https://twitter.com/twitter" data-widget-id="607341959796002816">Tweets por el @twitter.</a>                 
+                    </div>
+                </div>
                 <div class="anuncios"></div>
             </aside>
-            <section class="contenedor-post">
-                <header class="titulo-post">
-                    <h2>Título de post-1</h2>
-                    <h3>Escrito por: Autor Fecha: 01/01/2015</h3>
-                </header>
-                <div  class="imagen-post">
-                    <img src="img/121.jpg"/>
-                </div>    
-                <article class="fragmento-post">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut aliquet neque, in finibus neque. 
-                        Suspendisse placerat elementum suscipit. Duis porta congue justo sit amet euismod. 
-                        Donec facilisis cursus commodo. Nulla vitae ex eu enim sodales eleifend in in justo.</p>
-                </article>
-                <footer class="leer-mas"><a href="#">Leer más...</a></footer>
-            </section>
-            <section class="contenedor-post">
-                <header class="titulo-post">
-                    <h2>Título de post-2</h2>
-                    <h3>Escrito por: Autor Fecha: 01/01/2015</h3>                    
-                </header>
-                <div  class="imagen-post">
-                    <img src="img/16.jpg"/>
-                </div>    
-                <article class="fragmento-post">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut aliquet neque, in finibus neque. 
-                        Suspendisse placerat elementum suscipit. Duis porta congue justo sit amet euismod. 
-                        Donec facilisis cursus commodo. Nulla vitae ex eu enim sodales eleifend in in justo.</p>
-                </article>
-                <footer class="leer-mas"><a href="#">Leer más...</a></footer>
-            </section>
         </div>
         <footer class="footer">Copyright © 2015 Tutoriales HTML5</footer>
     </body>
