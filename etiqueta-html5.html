@@ -2,12 +2,10 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Tutoriales HTML5 - Contacto</title>
+        <title>Tutoriales HTML5 - HTML5</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
         <script type="application/javascript" src="javascript/jquery-1.11.3.min.js"></script>
-        <script src="javascript/modernizr.js"></script>
-        <script type="application/javascript" src="javascript/validacion.js"></script>
         <script type="application/javascript" src="javascript/menu.js"></script>
         <script type="application/javascript" src="javascript/facebook.js"></script>
         <script type="application/javascript" src="javascript/twitter.js"></script>
@@ -15,7 +13,7 @@
     </head>
     <body>
         <header class="titulo-pagina">
-            <h1>Contáctanos</h1>
+            <h1>HTML5</h1>
         </header>
         <div role="main" class="contenido">
             <nav class="menu">
@@ -41,31 +39,45 @@
                 </ul>    
             </nav>
             <div class="wrap">
-                <section class="contacto">
-                    <p class="mensaje-contacto">¿Dudas, comentarios, sugerencias? Envíanos un email y nos pondremos en contacto contigo.</p>
-                    <form class="formulario" action="javascript:validar()" method = "">
-                        <p class="mensaje-obligatorio">* Obligatorio</p>
-                        <p>
-                            <label>Nombre:</label> 
-                            <input id="nombre" required type="text" placeholder="Nombre" />
-                            <label class="asterisco">*</label>
-                            <span id="error-nombre"></span>
+                <section class="contenedor-post">
+                    <header class="titulo-post">
+                        <h2>Introducción a HTML5</h2>
+                        <h3>Escrito por: Admin Fecha: 07/06/2015</h3>
+                    </header>
+                    <div  class="imagen-post">
+                        <img src="img/HTML5_sticker.svg"/>
+                    </div>    
+                    <article class="fragmento-post">
+                        <p>En este post te daremos una breve introducción sobre lo que es HTML5 y sus principales características.</p>
+                    </article>
+                    <footer class="leer-mas"><a href="intro-html5.html">Leer más...</a></footer>
+                </section>
+                <section class="contenedor-post">
+                    <header class="titulo-post">
+                        <h2>Estructura de un documento HTML5</h2>
+                        <h3>Escrito por: Admin Fecha: 07/06/2015</h3>                    
+                    </header>
+                    <div  class="imagen-post">
+                        <img src="img/html5_estruct.png" />
+                    </div>    
+                    <article class="fragmento-post">
+                        <p>Ya hemos aprendido las nuevas características sobre el html5 y como migrar a este nuevo lenguage. Pero... <strong><i>¿Qué estructura debo seguir en mi código?</i></strong>
                         </p>
-                        <p>
-                            <label>Email:</label>
-                            <input id="email" required type="email" placeholder="Email" />
-                            <label class="asterisco">*</label>
-                            <span id="error-email"></span>
-                        </p>    
-                        <p>
-                            <label>Mensaje:</label>
-                            <span id="error-mensaje"></span>
-                            <br />
-                            <textarea id="mensaje" required rows="6" cols="40" placeholder="Tu mensaje..." ></textarea>
-                            <label class="asterisco-mensaje">*</label>                        
-                        </p>    
-                        <button class="boton-enviar">Enviar</button>
-                    </form>
+                    </article>
+                    <footer class="leer-mas"><a href="estructura-html5.html">Leer más...</a></footer>
+                </section>
+                <section class="contenedor-post">
+                    <header class="titulo-post">
+                        <h2>Dibujando con Canvas en HTML5</h2>
+                        <h3>Escrito por: Admin Fecha: 07/06/2015</h3>
+                    </header>
+                    <div  class="imagen-post">
+                        <img src="img/html5_canvas.png"/>
+                    </div>    
+                    <article class="fragmento-post">
+                        <p>El siguiente video te dará una pequeña introducción sobre como realizar dibujos con Canvas.</p>
+                    </article>
+                    <footer class="leer-mas"><a href="video-canvas.html">Leer más...</a></footer>
                 </section>
             </div>
             <aside role="complementary" class="sidebar">
@@ -92,6 +104,6 @@
                 <div class="anuncios"></div>
             </aside>
         </div>
-        <footer class="footer">Copyright © 2015 Tutoriales HTML5</footer>        
+        <footer class="footer">Copyright © 2015 Tutoriales HTML5</footer>
     </body>
 </html>
