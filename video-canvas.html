@@ -2,20 +2,22 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Tutoriales HTML5 - Contacto</title>
+        <title>Tutoriales HTML5 - Dibujando en HTML5 con Canvas</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
         <script type="application/javascript" src="javascript/jquery-1.11.3.min.js"></script>
-        <script src="javascript/modernizr.js"></script>
-        <script type="application/javascript" src="javascript/validacion.js"></script>
+        <script type="application/javascript" src="javascript/comentarios.js"></script>
         <script type="application/javascript" src="javascript/menu.js"></script>
         <script type="application/javascript" src="javascript/facebook.js"></script>
         <script type="application/javascript" src="javascript/twitter.js"></script>
         <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script type="application/javascript" src="javascript/canvasLogo.js"></script>
+
     </head>
     <body>
         <header class="titulo-pagina">
-            <h1>Contáctanos</h1>
+            <h1>Dibujando en HTML5 con Canvas</h1>
         </header>
         <div role="main" class="contenido">
             <nav class="menu">
@@ -41,31 +43,83 @@
                 </ul>    
             </nav>
             <div class="wrap">
-                <section class="contacto">
-                    <p class="mensaje-contacto">¿Dudas, comentarios, sugerencias? Envíanos un email y nos pondremos en contacto contigo.</p>
-                    <form class="formulario" action="javascript:validar()" method = "">
+                <section class="post">
+                    <header class="post-info">
+                        <h3>Escrito por: Admin Fecha: 07/06/2015</h3>
+                    </header>
+                    <div  class="imagen-post">
+                        <img src="img/html5_canvas.png"/>
+                    </div> 
+                    <article class="contenido-post">
+                        <p>
+                            El siguiente video te dará una pequeña introducción sobre como realizar dibujos con Canvas.
+                        </p>
+                        <br />
+                        <video poster="img/html5_canvas.png" width = "600" controls>
+                            <source src ="media/video_html5_canvas.3gp" />
+                            <source src ="media/video_html5_canvas.ogv" />
+                            <source src ="media/video_html5_canvas.webm" />
+                            <source src ="media/video_html5_canvas.mp4" />
+                            Tu navegador no soporta HTML5
+                        </video>
+                        <br />
+                        <br />
+                        <p>
+                            ¿Qué esperas?. Atrévete a experimentar con este nuevo elemento de HTML5, tal y como nosotros lo hicimos, creamos con canvas el logo de HTML5.                                                      
+                        </p>
+                        <br />
+                        <div class = "logo-canvas">
+                            <canvas id="logo-html5" width="600" height="400">
+                                El navegador no soporta HTML 5
+		                    </canvas>
+                        </div>
+                    </article>
+                    <div class="categorias">
+                        <h4>Categorías</h4>
+                        <ul>
+                            <li><a href="#">Categoría 1</a></li>
+                            <li><a href="#">Categoría 2</a></li>
+                        </ul>
+                    </div>
+                    <div class="etiquetas">
+                        <h4>Etiquetas</h4>
+                        <ul>
+                            <li><a href="#">Etiqueta 1</a></li>
+                            <li><a href="#">Etiqueta 2</a></li>
+                        </ul>
+                    </div>
+                    <footer class="recomendaciones">
+                        <h4>Recomendaciones</h4>
+                        <ul>
+                            <li><i class="fa fa-file-o fa-lg"></i><a href="#">Post-2</a></li>
+                            <li><i class="fa fa-video-camera fa-lg"></i><a href="#">Video 1</a></li>
+                        </ul>
+                    </footer>
+                </section>
+                <section class="comentarios">
+                    <h3>Deja tus comentarios:</h3>
+                    <form class="formulario-comentarios" action="javascript:comentarios()" method = "">
                         <p class="mensaje-obligatorio">* Obligatorio</p>
                         <p>
-                            <label>Nombre:</label> 
+                            <label><strong>Nombre:</strong></label> 
                             <input id="nombre" required type="text" placeholder="Nombre" />
                             <label class="asterisco">*</label>
                             <span id="error-nombre"></span>
                         </p>
                         <p>
-                            <label>Email:</label>
-                            <input id="email" required type="email" placeholder="Email" />
-                            <label class="asterisco">*</label>
-                            <span id="error-email"></span>
-                        </p>    
-                        <p>
-                            <label>Mensaje:</label>
+                            <label><strong>Mensaje:</strong></label>
                             <span id="error-mensaje"></span>
                             <br />
                             <textarea id="mensaje" required rows="6" cols="40" placeholder="Tu mensaje..." ></textarea>
                             <label class="asterisco-mensaje">*</label>                        
                         </p>    
-                        <button class="boton-enviar">Enviar</button>
+                        <button id="boton-enviar" class="boton-enviar">Enviar</button>
                     </form>
+                    <div id="comentarios-enviados">
+                        <h3>Comentarios</h3>
+                        <span id="mensaje-comentarios">No hay comentarios...</span>  
+                        <div id = "contenedor-comentarios"></div>
+                    </div>
                 </section>
             </div>
             <aside role="complementary" class="sidebar">
@@ -92,6 +146,6 @@
                 <div class="anuncios"></div>
             </aside>
         </div>
-        <footer class="footer">Copyright © 2015 Tutoriales HTML5</footer>        
+        <footer class="footer">Copyright © 2015 Tutoriales HTML5</footer>
     </body>
 </html>

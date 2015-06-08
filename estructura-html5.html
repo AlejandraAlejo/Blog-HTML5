@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Tutoriales HTML5 - Post 1</title>
+        <title>Tutoriales HTML5 - Estructura de un documento HTML5</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
         <script type="application/javascript" src="javascript/jquery-1.11.3.min.js"></script>
@@ -10,12 +10,13 @@
         <script type="application/javascript" src="javascript/menu.js"></script>
         <script type="application/javascript" src="javascript/facebook.js"></script>
         <script type="application/javascript" src="javascript/twitter.js"></script>
+        <link rel="icon" href="img/favicon.ico">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     </head>
     <body>
         <header class="titulo-pagina">
-            <h1>Post 1</h1>
+            <h1>Estructura de un documento HTML5</h1>
         </header>
         <div role="main" class="contenido">
             <nav class="menu">
@@ -43,15 +44,63 @@
             <div class="wrap">
                 <section class="post">
                     <header class="post-info">
-                        <h3>Escrito por: Autor Fecha: 01/01/2015</h2>
+                        <h3>Escrito por: Admin Fecha: 07/06/2015</h3>
                     </header>
                     <div  class="imagen-post">
-                        <img src="img/121.jpg"/>
+                        <img src="img/html5_estruct.png"/>
                     </div> 
                     <article class="contenido-post">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut aliquet neque, in finibus neque. Suspendisse placerat elementum suscipit. Duis porta congue justo sit amet euismod. Donec facilisis cursus commodo. Nulla vitae ex eu enim sodales eleifend in in justo. Vivamus lorem risus, molestie sed orci sollicitudin, condimentum aliquet neque. Aliquam vel pharetra erat. Proin at neque velit. Quisque eget mauris lobortis, dignissim neque vitae, ultricies odio.
-
-    Pellentesque ultricies semper est, sit amet congue nisl imperdiet a. Nam pretium, enim id egestas dapibus, dolor est aliquam dui, vel dignissim ante dolor id dolor. Maecenas consequat libero sapien, et sodales ipsum lobortis vitae. Maecenas in neque hendrerit, volutpat velit in, posuere justo. Nullam at dolor consectetur augue efficitur facilisis. Vestibulum fringilla, massa eu lacinia tempor, nisl ante feugiat eros, non mattis ligula neque at arcu. </p>
+                        <p>
+                            Ya hemos aprendido las nuevas características sobre el html5 y como migrar a este nuevo lenguage.
+                            <br />
+                            Pero... <strong><i>¿Qué estructura debo seguir en mi código?</i></strong>
+                            <br />
+                        </p>
+                        <br />
+                        <p>
+                            HTML5 incluye nuevos elementos para una mejor presentación y estructura de los documentos.
+                        </p>
+                        <br />
+                        <img src="img/estructura.png" title="Estructura HTML5" />
+                        <br />
+                        <br />
+                        <ul>
+                            <li>
+                                <strong>header: </strong>Define una sección de un encabezado.
+                                <br />
+                                Se puede usar al inicio de la página como un encabezado de página o también se puede utilizar dentro de un elemento:
+                                <pre class="post-2"><code>&lt;article&gt;</code></pre>.
+                            </li>
+                            <br />
+                            <li>
+                                <strong>footer: </strong>Define una sección de pie de página.
+                                <br />
+                                Se puede usar al final de la página como un pie de página o también en un elemento:
+                                <pre class="post-2"><code>&lt;article&gt;</code></pre>.
+                            </li>
+                            <br />
+                            <li>
+                                <strong>nav: </strong>Define una sección que aloja un bloque de principales enlaces (links) de navegación.
+                            </li>
+                            <br />
+                            <li>
+                                <strong>section: </strong>Parte de un todo que define secciones en un documento, tales como capítulos, encabezados, pie de páginas u otras secciones del documento.
+                            </li>
+                            <br />
+                            <li>
+                                <strong>article: </strong>Representa una unidad de contenido que puede valerse por sí misma y puede ser copiado a otras ubicaciones. Los blog’s, foros y noticias son ejemplos típicos de un artículo.
+                            </li>
+                            <br />
+                            <li>
+                                <strong>aside: </strong>Define una sección de contenido que es independiente del contenido. Típicamente se usa para barras laterales.
+                            </li>
+                        </ul>
+                        <br />
+                        <p>
+                            Con esta estructura básica, ya podemos comenzar a crear nuestros documentos HTML5.
+                        </p>
+                        <br />
+                        <br />
                     </article>
                     <div class="categorias">
                         <h4>Categorías</h4>

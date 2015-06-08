@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Tutoriales HTML5 - Post 1</title>
+        <title>Tutoriales HTML5 - Propiedad border-radius</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
         <script type="application/javascript" src="javascript/jquery-1.11.3.min.js"></script>
@@ -10,12 +10,13 @@
         <script type="application/javascript" src="javascript/menu.js"></script>
         <script type="application/javascript" src="javascript/facebook.js"></script>
         <script type="application/javascript" src="javascript/twitter.js"></script>
+        <link rel="icon" href="img/favicon.ico">
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     </head>
     <body>
         <header class="titulo-pagina">
-            <h1>Post 1</h1>
+            <h1>Propiedad border-radius</h1>
         </header>
         <div role="main" class="contenido">
             <nav class="menu">
@@ -43,15 +44,79 @@
             <div class="wrap">
                 <section class="post">
                     <header class="post-info">
-                        <h3>Escrito por: Autor Fecha: 01/01/2015</h2>
+                        <h3>Escrito por: Admin Fecha: 07/06/2015</h3>
                     </header>
                     <div  class="imagen-post">
-                        <img src="img/121.jpg"/>
+                        <img src="img/border-radius.png"/>
                     </div> 
                     <article class="contenido-post">
-                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut aliquet neque, in finibus neque. Suspendisse placerat elementum suscipit. Duis porta congue justo sit amet euismod. Donec facilisis cursus commodo. Nulla vitae ex eu enim sodales eleifend in in justo. Vivamus lorem risus, molestie sed orci sollicitudin, condimentum aliquet neque. Aliquam vel pharetra erat. Proin at neque velit. Quisque eget mauris lobortis, dignissim neque vitae, ultricies odio.
-
-    Pellentesque ultricies semper est, sit amet congue nisl imperdiet a. Nam pretium, enim id egestas dapibus, dolor est aliquam dui, vel dignissim ante dolor id dolor. Maecenas consequat libero sapien, et sodales ipsum lobortis vitae. Maecenas in neque hendrerit, volutpat velit in, posuere justo. Nullam at dolor consectetur augue efficitur facilisis. Vestibulum fringilla, massa eu lacinia tempor, nisl ante feugiat eros, non mattis ligula neque at arcu. </p>
+                        <p>Una nueva propiedad introducida en CSS3, es el border radius, el cual nos permite dar un aspecto redondeado a las esquinas de nuestros elementos. En este post, te enseñamos como hacerlo.</p>
+                        <br />
+                        <p>
+                            Te presentamos 3 ejemplos con sus respectivos códigos.
+                        </p>
+                        <br />
+                        <ul>
+                            <li>
+                                Esquinas redondeadas con un color de fondo específico:
+                                <div class="ejemplo-1">
+                                    ¡Bordes con esquina redondeada!
+                                </div>
+                                <br />
+                                <strong>Código: </strong>
+                                <pre class="post-1"><code>.ejemplo-1{  
+  border-radius: 25px;  
+  background: #8AC007;
+  padding: 20px;
+  width: 200px;
+  height: 150px; 
+}
+                                </code></pre>
+                            </li>
+                            <br />
+                            <li>
+                                Esquinas redondeadas de un elemento:
+                                <div class="ejemplo-2">
+                                    ¡Bordes con esquina redondeada!
+                                </div>
+                                <br />
+                                <strong>Código: </strong>
+                                <pre class="post-1"><code>.ejemplo-2{
+  border-radius: 25px;
+  border: 2px solid #8AC007;
+  padding: 20px;
+  width: 200px;
+  height: 150px; 
+}
+                                </code></pre>
+                            </li>
+                            <br />
+                            <li>
+                                Esquinas redondeadas con una imágen de fondo:
+                                <div class="ejemplo-3">
+                                    ¡Bordes con esquina redondeada!
+                                </div>
+                                <br />
+                                <strong>Código: </strong>
+                                <pre class="post-1"><code>.ejemplo-3{
+    border-radius: 25px;
+    background: url(gray.jpg);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    color: white;
+}
+                                </code></pre>
+                            </li>                             
+                        </ul>
+                        <br />
+                        <p>
+                        ¡Ahora a programar!. Con estos ejemplos básicos puedes brindar un mejor acabado a tus elementos de HTML5.
+                        </p>
+                        <br />
+                        <br />
                     </article>
                     <div class="categorias">
                         <h4>Categorías</h4>
