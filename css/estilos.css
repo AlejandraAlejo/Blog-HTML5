@@ -20,6 +20,10 @@ html, body{
     line-height: 4;      
 }
 
+.titulo-pagina h1{
+    margin-left: -6%      
+}
+
 .footer{
     width: 100%;
     position: absolute;
@@ -142,10 +146,10 @@ html, body{
     width: 185px;
 }
 
-/*PAGINA BLOG*/
+/*PAGINA BLOG---------------------------------------------------------------------------------------------------------------------*/
 .contenedor-post{
     border-bottom: 3px solid #e74700;
-    margin-left: auto;
+    margin-left: 5%;
     margin-right: auto;
     width: 90%;
     margin-top: 20px;
@@ -203,7 +207,7 @@ html, body{
 
 /*PAGINA POST------------------------------------------------------------------------------------------------------------------*/
 .post, .comentarios{
-    margin-left: auto;
+    margin-left: 5%;
     margin-right: auto;
     width: 90%;
 }
@@ -221,6 +225,21 @@ html, body{
 .contenido-post{
     margin-top: 15px;
     text-align: justify;
+    border-bottom: 2px dotted #e74700;
+}
+
+.contenido-post img{
+    margin-left: 22%;
+    width: 60%;
+}
+
+.contenido-post ul{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contenido-post video{
+    margin-left: 10%;
 }
 
 .categorias, .etiquetas, .recomendaciones{
@@ -234,13 +253,43 @@ html, body{
 .categorias ul li, .etiquetas ul li{
     display: inline;
     margin-right: 10px;
+    font-weight: bold;
+}
+
+.categorias ul li a, .etiquetas ul li a{
+    text-decoration: none;
+    color: #E74700;
+}
+
+.categorias ul li a:hover, .etiquetas ul li a:hover{
+    color: #AA3400;
 }
 
 .recomendaciones{
     margin-bottom: 20px;
 }
 
-.recomendaciones ul{
+.recomendaciones ul li{
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.recomendaciones ul li a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: #E74700;
+}
+
+.recomendaciones ul li a:hover{
+    color: #AA3400;
+}
+
+.recomendaciones ul li i{
+    color: #4d6684;
+}
+
+#mensaje-comentarios{
+    margin-bottom: 20px;
 }
 
 #comentarios-enviados h3{
@@ -267,10 +316,73 @@ html, body{
 }
 
 .categorias h4, .etiquetas h4, .recomendaciones h4{
-    color: #83AA30;    
+    color: #83AA30;  
+    margin-bottom: 10px;
 }
 
+pre.post-1{
+    background-color: #3d3d3d;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 17px;
+    width: 80%;
+}
 
+pre.post-2{
+    background-color: #3d3d3d;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 17px;
+    width: 12%;
+    text-align: center;
+}
+
+.ejemplo-1, .ejemplo-2, .ejemplo-3{
+    text-align: center;
+    margin-left: 30%;
+    margin-top: 20px;
+}
+
+.ejemplo-1{
+    border-radius: 25px;
+    background: #8AC007;
+    padding: 20px;
+    width: 200px;
+    height: 150px; 
+}
+
+.ejemplo-2{
+    border-radius: 25px;
+    border: 2px solid #8AC007;
+    padding: 20px;
+    width: 200px;
+    height: 150px; 
+}
+
+.ejemplo-3{
+    border-radius: 25px;
+    background: url(../img/gray.jpg);
+    background-position: left top;
+    background-repeat: repeat;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+    color: white;
+}
+
+.logo-canvas{
+    margin-left: auto;
+    margin-right: auto;
+    width: 36%;
+}
 
 /*PAGINA CONTACTO--------------------------------------------------------------------------------------------------------------*/
 .contacto{
