@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Tutoriales HTML5 - Nuevos elementos form</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+        <link href="css/estilos.css" rel="stylesheet" type="text/css">
+        <script type="application/javascript" src="javascript/jquery-1.11.3.min.js"></script>
+        <script type="application/javascript" src="javascript/comentarios.js"></script>
+        <script type="application/javascript" src="javascript/menu.js"></script>
+        <script type="application/javascript" src="javascript/facebook.js"></script>
+        <script type="application/javascript" src="javascript/twitter.js"></script>
+        <link rel="icon" href="img/favicon.ico">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <script type="application/javascript" src="javascript/canvasLogo.js"></script>
+
+    </head>
+    <body>
+        <header class="titulo-pagina">
+            <h1>Usando etiqueta Form en HTML5 (nuevos elementos)</h1>
+        </header>
+        <div role="main" class="contenido">
+            <nav class="menu">
+                <img class="logo" src="img/HTML5%20Logo.svg" />
+                <ul>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><span class="op-categorias">Categorías</span>
+                        <ul class="op-oculta">
+                            <li><a href="tutoriales.html">Tutoriales</a></li>
+                            <li><a href="videos.html">Videotutoriales</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="op-etiquetas">Etiquetas</span>
+                        <ul class="op-oculta">
+                            <li><a href="etiqueta-html5.html">HTML5</a></li>
+                            <li><a href="etiqueta-css.html">CSS</a></li>
+                            <li><a href="tutoriales.html">Tutoriales</a></li>
+                            <li><a href="videos.html">Videotutoriales</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="videos.html">Videotutoriales</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>    
+            </nav>
+            <div class="wrap">
+                <section class="post">
+                    <header class="post-info">
+                        <h3>Escrito por: Admin Fecha: 07/06/2015</h3>
+                    </header>
+                    <div  class="imagen-post">
+                        <img src="img/html5_formularios.png"/>
+                    </div> 
+                    <article class="contenido-post">
+                        <p>
+                            El siguiente video menciona elementos adicionales del HTML5 utilizado en formularios.
+                        </p>
+                        <br />
+                        <video poster="img/html5_formularios.png" width = "600" controls>
+                            <source src ="media/video_html5_formulario.3gp" />
+                            <source src ="media/video_html5_formulario.ogv" />
+                            <source src ="media/video_html5_formulario.webm" />
+                            <source src ="media/video_html5_formulario.mp4" />
+                            Tu navegador no soporta HTML5
+                        </video>
+                        <br />
+                        <br />
+                        <p>
+                            ¿Qué esperas? Atrévete a experimentar algunos elementos nuevos que trae el HTML5.                                       
+                        </p>
+                        <br />                        
+                    </article>
+                    <div class="categorias">
+                        <h4>Categorías</h4>
+                        <ul>
+                            <li><a href="videos.html">Videotutoriales</a></li>
+                        </ul>
+                    </div>
+                    <div class="etiquetas">
+                        <h4>Etiquetas</h4>
+                        <ul>
+                            <li><a href="etiqueta-html5.html">HTML5</a></li>
+                            <li><a href="videos.html">Videotutoriales</a></li>
+                        </ul>
+                    </div>
+                    <footer class="recomendaciones">
+                        <h4>Recomendaciones</h4>
+                        <ul>
+                            <li><i class="fa fa-file-o fa-lg"></i><a href="intro-html5.html">Introducción a HTML5</a></li>
+                            <li><i class="fa fa-file-o fa-lg"></i><a href="estructura-html5.html">Estructura de un documento HTML5</a></li>
+                            <li><i class="fa fa-video-camera fa-lg"></i><a href="video-canvas.html">Dibujando en HTML5 con Canvas</a></li>
+                        </ul>
+                    </footer>
+                </section>
+                <section class="comentarios">
+                    <h3>Deja tus comentarios:</h3>
+                    <form class="formulario-comentarios" action="javascript:comentarios()" method = "">
+                        <p class="mensaje-obligatorio">* Obligatorio</p>
+                        <p>
+                            <label><strong>Nombre:</strong></label> 
+                            <input id="nombre" required type="text" placeholder="Nombre" />
+                            <label class="asterisco">*</label>
+                            <span id="error-nombre"></span>
+                        </p>
+                        <p>
+                            <label><strong>Mensaje:</strong></label>
+                            <span id="error-mensaje"></span>
+                            <br />
+                            <textarea id="mensaje" required rows="6" cols="40" placeholder="Tu mensaje..." ></textarea>
+                            <label class="asterisco-mensaje">*</label>                        
+                        </p>    
+                        <button id="boton-enviar" class="boton-enviar">Enviar</button>
+                    </form>
+                    <div id="comentarios-enviados">
+                        <h3>Comentarios</h3>
+                        <span id="mensaje-comentarios">No hay comentarios...</span>  
+                        <div id = "contenedor-comentarios"></div>
+                    </div>
+                </section>
+            </div>
+            <aside role="complementary" class="sidebar">
+                <div class = "redes-sociales">
+                    <h2>Redes Sociales</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com"><img src="img/facebook-square.svg" title="Facebook" /></a></li>
+                        <li><a href="https://twitter.com/"><img src="img/twitter.svg" title="Twitter" /></a></li>
+                        <li><a href="https://plus.google.com/"><img src="img/googleplus-square.svg"  title="Google+" /></a></li>
+                    </ul>    
+                </div>
+                <div class="redes-sociales">
+                    <h2>Facebook</h2>
+                    <div class="facebook">
+                        <div class="facebook"><div class="fb-page" data-href="https://www.facebook.com/facebook"
+   data-height = "130" data-hide-cover="false" data-show-facepile="false" 
+  data-show-posts="false"></div></div>                        
+                    </div>
+                    <h2>Twitter</h2>
+                    <div class="twitter">
+                        <a class="twitter-timeline"  href="https://twitter.com/twitter" data-widget-id="607341959796002816">Tweets por el @twitter.</a>                 
+                    </div>
+                </div>
+                <div class="anuncios"></div>
+            </aside>
+        </div>
+        <footer class="footer">Copyright © 2015 Tutoriales HTML5</footer>
+    </body>
+</html>
