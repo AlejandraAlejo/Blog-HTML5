@@ -2,6 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale = 1" name="viewport">
         <title>Tutoriales HTML5 - Videotutoriales</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
@@ -13,31 +14,37 @@
     </head>
     <body>
         <header class="titulo-pagina">
-            <h1>Videotutoriales</h1>
+            <span>Videotutoriales</span>
         </header>
         <div role="main" class="contenido">
-            <nav class="menu">
+            <aside role="complementary" class="sidebar-left">                
                 <img class="logo" src="img/HTML5%20Logo.svg" />
-                <ul>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><span class="op-categorias">Categorías</span>
-                        <ul class="op-oculta">
-                            <li><a href="tutoriales.html">Tutoriales</a></li>
-                            <li><a href="videos.html">Videotutoriales</a></li>
-                        </ul>
-                    </li>
-                    <li><span class="op-etiquetas">Etiquetas</span>
-                        <ul class="op-oculta">
-                            <li><a href="etiqueta-html5.html">HTML5</a></li>
-                            <li><a href="etiqueta-css.html">CSS</a></li>
-                            <li><a href="tutoriales.html">Tutoriales</a></li>
-                            <li><a href="videos.html">Videotutoriales</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="videos.html">Videotutoriales</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>    
-            </nav>
+                <label class="mobile_menu" for="mobile_menu">
+                    <span>≡</span>
+                </label>
+                <input id="mobile_menu" type="checkbox">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><span class="op-categorias">Categorías</span>
+                            <ul class="op-oculta">
+                                <li><a href="tutoriales.html">Tutoriales</a></li>
+                                <li><a href="videos.html">Videotutoriales</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="op-etiquetas">Etiquetas</span>
+                            <ul class="op-oculta">
+                                <li><a href="etiqueta-html5.html">HTML5</a></li>
+                                <li><a href="etiqueta-css.html">CSS</a></li>
+                                <li><a href="tutoriales.html">Tutoriales</a></li>
+                                <li><a href="videos.html">Videotutoriales</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="videos.html">Videotutoriales</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>    
+                </nav>
+            </aside>
             <div class="wrap">
                 <section class="contenedor-post">
                     <header class="titulo-post">
@@ -79,7 +86,7 @@
                     <footer class="leer-mas"><a href="video-nav.html">Leer más...</a></footer>
                 </section> 
             </div>
-            <aside role="complementary" class="sidebar">
+            <aside role="complementary" class="sidebar-right">
                 <div class = "redes-sociales">
                     <h2>Redes Sociales</h2>
                     <ul>
