@@ -31,10 +31,10 @@ html, body{
     clear: both;
 }
 
-.logo{
-    margin-left: 42px;
-    margin-top: 25px;
-    width: 120px;
+.logo {
+    margin-top: 15px;
+    text-align: center;
+    width: 145px;
 }
 
 .contenido{
@@ -48,7 +48,7 @@ html, body{
     margin-left: auto;
     margin-right: auto;
     max-height: 100%;
-    width: 65%;
+    width: 60%;
     overflow-y: scroll;
 }
 
@@ -56,9 +56,10 @@ html, body{
 .menu{
     background-color: #4D6684;
     color: white;
-    width: 15%;
+    width: 20%;
     float: left;
     height:100%;
+    text-align: center;
 }
 
 .menu a, .sidebar a{
@@ -79,7 +80,7 @@ html, body{
 }
 
 .menu ul{
-    margin-top: 50px;
+    margin-top: 15px;
     padding: 0;
     text-align: center;
     border-top-right-radius: 5px;
@@ -112,10 +113,10 @@ html, body{
 .sidebar{
     background-color: #4D6684;
     color: white;
-    width: 21.5%;    
+    width: 20%;    
     float: left;
     height: 100%;
-    margin-left: -1.5%;
+    text-align: center;
 }
 
 .sidebar h2{
@@ -126,24 +127,27 @@ html, body{
 
 .sidebar ul{
     padding: 0;
-    width: 65%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .sidebar ul li{
     list-style-type: none;
-    width: 60px;
+    width: 20%;
+    min-width: 50px;
     margin-right: auto;
     margin-left: auto;
     display: inline-block;
 }
 
-.twitter{
+.twitter {
     bottom: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 185px;
+    min-width: 180px;
+    padding: 0;
+    max-width: 85%;
 }
 
 /*PAGINA BLOG---------------------------------------------------------------------------------------------------------------------*/
@@ -163,22 +167,23 @@ html, body{
     text-align: center;
 }
 
-.imagen-post{
-    overflow: hidden;
-    height: 400px;
-    width: 600px;
+.imagen-post {
+    height: auto;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    margin-top: 30px;
+    text-align: center;
+    width: 90%;
 }
 
 .imagen-post img{
     transition: all 0.5s ease-in-out 0.1s;
     max-width: 100%;
+    height: auto;
 }
 
 .imagen-post img:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .fragmento-post{
@@ -189,7 +194,8 @@ html, body{
 
 .leer-mas{
     margin-bottom: 20px;
-    margin-left: 85%;
+    margin-right: 2.5%;
+    text-align: right;
 }
 
 .leer-mas a{
@@ -489,3 +495,13 @@ input:focus:valid, textarea:focus:valid{
     float: right;
 }
 
+@media only screen and (max-width: 930px) {
+
+body{
+    display: none;
+}
+
+
+
+
+}
