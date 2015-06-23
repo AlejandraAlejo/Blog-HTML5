@@ -28,8 +28,9 @@ html, body{
     line-height: 4;      
 }
 
-.titulo-pagina h1{
-    margin-left: -6%      
+.titulo-pagina span{
+    font-size: 28px;
+    font-weight: bold;  
 }
 
 .footer{
@@ -324,6 +325,7 @@ html, body{
 
 .formulario-comentarios{
     width: 55%;
+    min-width: 392px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -358,7 +360,7 @@ pre.post-2{
     margin-left: auto;
     margin-right: auto;
     padding: 17px;
-    width: 12%;
+    width: 40%;
     text-align: center;
 }
 
@@ -401,6 +403,9 @@ pre.post-2{
     width: 36%;
 }
 
+#comentarios-enviados{
+    margin-bottom: 40px;
+}
 /*PAGINA CONTACTO--------------------------------------------------------------------------------------------------------------*/
 .contacto{
     margin-left: auto;
@@ -569,6 +574,40 @@ label.mobile_menu {
 #mobile_menu:checked + .menu {
     display: block;
 }
-
     
+.titulo-pagina span{
+    font-size: 18px;
+}
+
+}
+
+@media only screen and (max-width: 480px) {
+    
+
+
+textarea#mensaje {
+    width: 100%;
+}
+.formulario-comentarios {
+    min-width: 280px
+}
+
+
+}
+
+@media only screen and (max-width: 413px) {
+
+pre.post-1 {
+    text-align: center;
+    width: 86%;
+    font-size: 9px;
+}
+.formulario-comentarios {
+    min-width: 270px;
+}
+    
+.titulo-pagina span{
+    font-size: 14px;
+}
+
 }

@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Tutoriales HTML5 - Nuevos elementos form</title>
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale = 1" name="viewport">
+        <title>Tutoriales HTML5</title>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
         <link href="css/estilos.css" rel="stylesheet" type="text/css">
         <script type="application/javascript" src="javascript/jquery-1.11.3.min.js"></script>
@@ -17,31 +18,37 @@
     </head>
     <body>
         <header class="titulo-pagina">
-            <h1>Usando etiqueta Form en HTML5 (nuevos elementos)</h1>
+            <span>Usando etiqueta Form en HTML5</span>
         </header>
         <div role="main" class="contenido">
-            <nav class="menu">
+            <aside role="complementary" class="sidebar-left">                
                 <img class="logo" src="img/HTML5%20Logo.svg" />
-                <ul>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><span class="op-categorias">Categorías</span>
-                        <ul class="op-oculta">
-                            <li><a href="tutoriales.html">Tutoriales</a></li>
-                            <li><a href="videos.html">Videotutoriales</a></li>
-                        </ul>
-                    </li>
-                    <li><span class="op-etiquetas">Etiquetas</span>
-                        <ul class="op-oculta">
-                            <li><a href="etiqueta-html5.html">HTML5</a></li>
-                            <li><a href="etiqueta-css.html">CSS</a></li>
-                            <li><a href="tutoriales.html">Tutoriales</a></li>
-                            <li><a href="videos.html">Videotutoriales</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="videos.html">Videotutoriales</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>    
-            </nav>
+                <label class="mobile_menu" for="mobile_menu">
+                    <span>≡</span>
+                </label>
+                <input id="mobile_menu" type="checkbox">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><span class="op-categorias">Categorías</span>
+                            <ul class="op-oculta">
+                                <li><a href="tutoriales.html">Tutoriales</a></li>
+                                <li><a href="videos.html">Videotutoriales</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="op-etiquetas">Etiquetas</span>
+                            <ul class="op-oculta">
+                                <li><a href="etiqueta-html5.html">HTML5</a></li>
+                                <li><a href="etiqueta-css.html">CSS</a></li>
+                                <li><a href="tutoriales.html">Tutoriales</a></li>
+                                <li><a href="videos.html">Videotutoriales</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="videos.html">Videotutoriales</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>    
+                </nav>
+            </aside>
             <div class="wrap">
                 <section class="post">
                     <header class="post-info">
@@ -55,7 +62,7 @@
                             El siguiente video menciona elementos adicionales del HTML5 utilizado en formularios.
                         </p>
                         <br />
-                        <video poster="img/html5_formularios.png" width = "600" controls>
+                        <video poster="img/html5_formularios.png" width = "80%" controls>
                             <source src ="media/video_html5_formulario.ogv" />
                             <source src ="media/video_html5_formulario.webm" />
                             <source src ="media/video_html5_formulario.mp4" />
@@ -116,7 +123,7 @@
                     </div>
                 </section>
             </div>
-            <aside role="complementary" class="sidebar">
+            <aside role="complementary" class="sidebar-right">
                 <div class = "redes-sociales">
                     <h2>Redes Sociales</h2>
                     <ul>
