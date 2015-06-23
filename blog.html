@@ -16,28 +16,34 @@
             <h1>Blog</h1>
         </header>
         <div role="main" class="contenido">
-            <nav class="menu">
+            <aside role="complementary" class="sidebar-left">                
                 <img class="logo" src="img/HTML5%20Logo.svg" />
-                <ul>
-                    <li><a href="blog.html">Blog</a></li>
-                    <li><span class="op-categorias">Categorías</span>
-                        <ul class="op-oculta">
-                            <li><a href="tutoriales.html">Tutoriales</a></li>
-                            <li><a href="videos.html">Videotutoriales</a></li>
-                        </ul>
-                    </li>
-                    <li><span class="op-etiquetas">Etiquetas</span>
-                        <ul class="op-oculta">
-                            <li><a href="etiqueta-html5.html">HTML5</a></li>
-                            <li><a href="etiqueta-css.html">CSS</a></li>
-                            <li><a href="tutoriales.html">Tutoriales</a></li>
-                            <li><a href="videos.html">Videotutoriales</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="videos.html">Videotutoriales</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>    
-            </nav>
+                <label class="mobile_menu" for="mobile_menu">
+                    <span>≡</span>
+                </label>
+                <input id="mobile_menu" type="checkbox">
+                <nav class="menu">
+                    <ul>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><span class="op-categorias">Categorías</span>
+                            <ul class="op-oculta">
+                                <li><a href="tutoriales.html">Tutoriales</a></li>
+                                <li><a href="videos.html">Videotutoriales</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="op-etiquetas">Etiquetas</span>
+                            <ul class="op-oculta">
+                                <li><a href="etiqueta-html5.html">HTML5</a></li>
+                                <li><a href="etiqueta-css.html">CSS</a></li>
+                                <li><a href="tutoriales.html">Tutoriales</a></li>
+                                <li><a href="videos.html">Videotutoriales</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="videos.html">Videotutoriales</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>    
+                </nav>
+            </aside>
             <div class="wrap">
                 <section class="contenedor-post">
                     <header class="titulo-post">
@@ -132,7 +138,7 @@
                     <footer class="leer-mas"><a href="video-nav.html">Leer más...</a></footer>
                 </section> 
             </div>
-            <aside role="complementary" class="sidebar">
+            <aside role="complementary" class="sidebar-right">
                 <div class = "redes-sociales">
                     <h2>Redes Sociales</h2>
                     <ul>
@@ -142,6 +148,12 @@
                     </ul>    
                 </div>
                 <div class="redes-sociales">
+                    <h2>Facebook</h2>
+                    <div class="facebook">
+                        <div class="facebook"><div class="fb-page" data-href="https://www.facebook.com/facebook"
+   data-height = "130" data-hide-cover="false" data-show-facepile="false" 
+  data-show-posts="false"></div></div>                        
+                    </div>
                     <h2>Twitter</h2>
                     <div class="twitter">
                         <a class="twitter-timeline"  href="https://twitter.com/twitter" data-widget-id="607341959796002816">Tweets por el @twitter.</a>                 
